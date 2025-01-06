@@ -1,12 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import Drawer from './components/Drawer/Drawer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from "./pages/Home/HomePage";
+import DynamicPage from "./components/DynamicPage/DynamicPage.js"
 
 function App() {
   return (
-    <div className="app">
-      <Drawer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:cabinetId/:folderId" element={<DynamicPage />} />
+      </Routes>
+    </Router>
   );
 }
 
