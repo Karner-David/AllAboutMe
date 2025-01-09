@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import backArrowImg from '../../images/back_arrow.webp';
+import './BackToHomeButton.css';
 
 
 function BackToHomeButton() {
@@ -10,7 +12,7 @@ function BackToHomeButton() {
     }
     return(
         <div className="button-container">
-            <button className="button" onClick={goToHomePage}>Back To Home</button>
+            <img id="back-button" src={backArrowImg} alt="back arrow" onClick={goToHomePage} />
         </div>
     )
 }

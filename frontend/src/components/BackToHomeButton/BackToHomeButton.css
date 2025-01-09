@@ -1,8 +1,15 @@
 .button-container {
-    margin: auto 0px;
+    width: 13vh;
+    height: 10vh;
 }
 
-.button {
-    margin-left: 1vh;
-    background-color: aqua;
+.button-container #back-button {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    object-fit: contain;
+    /* margin: auto; */
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
 }
