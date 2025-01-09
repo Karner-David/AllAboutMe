@@ -1,0 +1,8 @@
+.button-container {
+    margin: auto 0px;
+}
+
+.button {
+    margin-left: 1vh;
+    background-color: aqua;
+}

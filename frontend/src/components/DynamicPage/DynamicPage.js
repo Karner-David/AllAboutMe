@@ -1,27 +1,45 @@
 import React, { Suspense } from 'react';
 import { useParams } from 'react-router-dom';
 import BackToHomeButton from '../BackToHomeButton/BackToHomeButton';
+// import FolderLeftNav from '../FolderLeftNav/FolderLeftNav';
+import LeftNav from '../LeftNav/LeftNav';
+import "./DynamicPage.css";
 
-const componentsMap = {
+const importMap = {
     TopCabinetFolders: {
       Interests: React.lazy(() => import("../../pages/TopCabinetFolders/InterestsPage/InterestsPage")),
       Clubs: React.lazy(() => import('../../pages/TopCabinetFolders/ClubsPage/ClubsPage')),
-      // Add more dynamic imports here
+      Education: React.lazy(() => import('../../pages/TopCabinetFolders/EducationPage/EducationPage')),
+      Me: React.lazy(() => import('../../pages/TopCabinetFolders/MePage/MePage')),
     },
-    // Add other cabinet mappings here
+    MidCabinetFolders: {
+      Photos: React.lazy(() => import("../../pages/MidCabinetFolders/PhotosPage/PhotosPage")),
+      Videos: React.lazy(() => import("../../pages/MidCabinetFolders/VideosPage/VideosPage")),
+    },
+    BotCabinetFolders: {}
   };
+
+const folderNavMap = {
+    TopCabinetFolders: ["Who Am I?", "Education", "Clubs", "Interests"],
+    MidCabinetFolders: ["Photos", "Videos"],
+    BotCabinetFolders: {}
+}
+
 
 function DynamicPage() {
     const { cabinetId, folderId } = useParams();
 
-    const ComponentToRender = componentsMap[cabinetId]?.[folderId];
+    const ComponentToRender = importMap[cabinetId]?.[folderId];
     if (!ComponentToRender) {
         return <h1>Folder not found</h1>;
     }
 
     return (
-        <div>
-            <BackToHomeButton/>
+        <div className="folder-page-container">
+            <div className="left-nav-bar">
+                <BackToHomeButton/>
+                <LeftNav folderNames={folderNavMap[cabinetId]}/>
+            </div>
             <Suspense fallback={<div>Loading...</div>}>
                 <ComponentToRender/>
             </Suspense>

@@ -1,0 +1,26 @@
+.folder-container {
+    width: 25vh;
+    height: 17vh;
+    background-image: url("../../images/folder.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin-bottom: 10vh; */
+    /* backg */
+    text-align: center;
+}
+
+.folder-container img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+    margin: 0 0;
+}
+
+.folder-container h1 {
+    font-size: 1.3vw;
+    position: relative;
+    z-index: 1;
+    top: 40%;
+}

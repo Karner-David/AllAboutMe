@@ -9,7 +9,9 @@ function BackToHomeButton() {
         nav('/');
     }
     return(
-        <button onClick={goToHomePage}>Back To Home</button>
+        <div className="button-container">
+            <button className="button" onClick={goToHomePage}>Back To Home</button>
+        </div>
     )
 }
 

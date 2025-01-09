@@ -20,7 +20,7 @@ function HomePage() {
 
             const splineAgainTimer = setTimeout(() => {
                 setZIndexState('splineAgain');
-            }, 350); // white screen duration
+            }, 750); // white screen duration
 
             return () => clearTimeout(splineAgainTimer);
         }, 500); // initial Spline duration
@@ -70,7 +70,7 @@ function HomePage() {
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    zIndex: zIndexState === 'spline' || zIndexState === 'splineAgain' ? 10 : 0, // Spline on top during 'spline' and 'splineAgain' states
+                    zIndex: zIndexState === 'spline' || zIndexState === 'splineAgain' ? 10 : 0, 
                 }}
             />
         </div>

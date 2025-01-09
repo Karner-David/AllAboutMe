@@ -1,0 +1,17 @@
+html {
+    width:100%;
+    height:100%;
+}
+
+.folder-page-container {
+    display: flex;
+    flex-direction: row;
+    background: url('../../../public/folder_background_img.png');
+    background-size: 100%;
+    width:100%;
+    height:100%;
+}
+
+.left-nav-bar {
+    margin: 3vh 5vh;
+}
