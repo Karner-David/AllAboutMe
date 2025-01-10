@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./FolderLeftNav.css";
 import folderImg from "../../images/folder.png";
 
 const FolderLeftNav = (
-    { text, } ) => {
-        return (
-            <div className="folder-container">
-                {/* <img src={folderImg} alt="folder png" /> */}
-                <h1>{text}</h1>
-            </div>
-        )
-    }
+    { text, isChosen, onClick } ) => {
+
+    const [hovered, setHovered] = useState(false);
+    console.log('This is onclick' + onClick)
+
+    return (
+        <div 
+            className={`folder-container ${hovered ? 'hovered' : ''} ${
+            isChosen ? 'chosen' : ''
+        }`}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            onClick={() => onClick(text)}
+        >
+            <h1>{text}</h1>
+        </div>
+    )
+}
 
 export default FolderLeftNav;

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import BackToHomeButton from '../BackToHomeButton/BackToHomeButton';
 // import FolderLeftNav from '../FolderLeftNav/FolderLeftNav';
 import LeftNav from '../LeftNav/LeftNav';
+import TopCabInfoPage from '../TopCabinetInformationPage/TopCabInfoPage';
 import "./DynamicPage.css";
 
 const importMap = {
@@ -20,7 +21,7 @@ const importMap = {
   };
 
 const folderNavMap = {
-    TopCabinetFolders: ["Who Am I?", "Education", "Clubs", "Interests"],
+    TopCabinetFolders: ["Me", "Education", "Clubs", "Interests"],
     MidCabinetFolders: ["Photos", "Videos"],
     BotCabinetFolders: {}
 }
@@ -38,10 +39,13 @@ function DynamicPage() {
         <div className="folder-page-container">
             <div className="left-nav-bar">
                 <BackToHomeButton/>
-                <LeftNav folderNames={folderNavMap[cabinetId]}/>
+                <LeftNav folderNames={folderNavMap[cabinetId]}
+                         chosenFolder={folderId}
+                         chosenCabinet={cabinetId}
+                />
             </div>
             <Suspense fallback={<div>Loading...</div>}>
-                <ComponentToRender/>
+                <TopCabInfoPage title={folderId}/>
             </Suspense>
         </div>
     )
