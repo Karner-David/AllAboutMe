@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./FolderLeftNav.css";
-import folderImg from "../../images/folder.png";
 
 const FolderLeftNav = (
     { text, isChosen, onClick } ) => {
