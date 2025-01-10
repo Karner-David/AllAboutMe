@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[716],{716:(n,e,r)=>{r.r(e),r.d(e,{default:()=>t});r(43);var s=r(579);const t=function(){return(0,s.jsx)("p",{children:"Clubs"})}}}]);
+//# sourceMappingURL=716.f69297e1.chunk.js.map
