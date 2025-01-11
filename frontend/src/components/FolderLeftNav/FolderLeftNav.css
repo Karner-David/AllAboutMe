@@ -1,7 +1,7 @@
 .folder-container {
     width: 25vh;
     height: 17vh;
-    background-image: url("../../images/folder.png");
+    background-image: url("../../media/folder.png");
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import backArrowImg from '../../images/back_arrow.webp';
+import backArrowImg from '../../media/back_arrow.webp';
 import './BackToHomeButton.css';
 
 
