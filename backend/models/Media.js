@@ -10,4 +10,18 @@ const mediaSchema = new mongoose.Schema({
         enum: ['photo', 'video'],
         required: true,
     },
+    url: {
+        type: String,
+        required: true,
+    },
+    isHorizontal: {
+        type: Boolean,
+        default: true,
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+    }
 });
+
+module.exports = mongoose.model('Media', mediaSchema);
