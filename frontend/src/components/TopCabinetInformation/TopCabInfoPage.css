@@ -9,6 +9,7 @@
     background-size: cover;
     margin-right: 3vw;
     margin-top: 5vh;
+    font-family: KalamRegular;
 }
 
 .left-side-container {
@@ -71,4 +72,19 @@
     display: flex;
     justify-content: center;
     margin: 3vh 0;
+}
+
+@font-face {
+    font-family: KalamBold;
+    src: url('../../fonts/Kalam-Bold.ttf');
+}
+
+@font-face {
+    font-family: KalamLight;
+    src: url('../../fonts/Kalam-Light.ttf');
+}
+
+@font-face {
+    font-family: KalamRegular;
+    src: url('../../fonts/Kalam-Regular.ttf');
 }

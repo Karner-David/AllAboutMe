@@ -1,4 +1,6 @@
 .left-nav {
     width: 20%;
     height: 20%;
+    position: sticky;
+    top: 16vh;
 }

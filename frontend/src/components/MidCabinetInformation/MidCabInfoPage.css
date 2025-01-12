@@ -1,42 +1,55 @@
 html {
-    /* background-color: black; */
+    background-color: transparent; 
 }
 
 
 .mid-cabinet-container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    /* background-color: black; */
-    color: white;
+    color: black;
+    font-family: KalamRegular;
+    text-align: center;
+}
+
+.mid-cabinet-container h1 {
+    font-size: 3vw;
+    margin-bottom: 2vh;
 }
 
 .mid-cabinet-container .media-container {
     max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 1vw;
-    /* gap: 2vw; */
     column-gap: 1vw;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    border-radius: 2%;
+    overflow: hidden;
 }
 
 .mid-cabinet-container .media-container .media-item {
     /* border-radius: 20%; */
     /* border: 2px purple solid; */
+    max-width: 100%;
+    object-fit: contain;
+    border: 4vh white solid;
+    border-bottom: 5vh white solid;
+    margin-bottom: 4vh;
 }
 
 .mid-cabinet-container .media-container .photo {
-    /* border: 1px white solid; */
-    border-radius: 5%;
+    /* border: 10px white solid; */
+    /* border-radius: 5%; */
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .mid-cabinet-container .media-container .photo.hor {
     width: 30vw;
-    height: 40vh;
+    height: 41vh;
 }
 
 .mid-cabinet-container .media-container .photo.ver {
@@ -45,12 +58,32 @@ html {
 }
 
 .mid-cabinet-container .media-container .video {
-
+    display: block;
+    width: 70vw;
+    height: 85vh;
 }
 
 .mid-cabinet-container .media-container .media-title {
+    height: 20px;
     text-align: center;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 2px;
+    color: black;
+    padding: 5vh 0 0 0;
+    margin: 0;
+    line-height: 1;
+    background-color: white;
+}
+
+@font-face {
+    font-family: KalamBold;
+    src: url('../../fonts/Kalam-Bold.ttf');
+}
+
+@font-face {
+    font-family: KalamLight;
+    src: url('../../fonts/Kalam-Light.ttf');
+}
+
+@font-face {
+    font-family: KalamRegular;
+    src: url('../../fonts/Kalam-Regular.ttf');
 }

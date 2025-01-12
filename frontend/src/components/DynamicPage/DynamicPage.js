@@ -32,8 +32,8 @@ const sample_photos = [
 ];
 
 const sample_videos = [
-    { id: 1, src: "https://www.youtube.com/embed/iykJL00HmQ0?si=v2B4ZJEi-M3Sk_lJ", title: "Philippines 2023"},
-    { id: 2, src: "https://www.youtube.com/embed/nMzN8oeAccU?si=o4Moq96wik4zgrfr", title: "[Frieren] | Down With Me - Lil Tecca"},
+    { id: 1, src: "https://www.youtube.com/embed/iykJL00HmQ0?si=v2B4ZJEi-M3Sk_lJ", title: "[Frieren] | Down With Me - Lil Tecca"},
+    { id: 2, src: "https://www.youtube.com/embed/nMzN8oeAccU?si=o4Moq96wik4zgrfr", title: "Philippines 2023"},
     { id: 3, src: "https://www.youtube.com/embed/ORnxApYCO6o?si=wRcX-YS9_suot1KE", title: "Clips 1 | [QTip] Namou"},
 ]
 
@@ -59,8 +59,8 @@ function DynamicPage() {
                 {/* <TopCabInfoPage title={folderId}></TopCabInfoPage> */}
                 <ComponentToRender 
                     title={folderId}
-                    arrOfMedia={sample_photos}
-                    isPhoto={true}
+                    arrOfMedia={folderId === "Photos" ? sample_photos : sample_videos}
+                    isPhoto={folderId === "Photos" ? true : false}
                 />
             </Suspense>
         </div>

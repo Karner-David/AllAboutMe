@@ -1,24 +1,23 @@
 html {
     width:100vw;
     height:100vh;
+    background: url('../../../public/folder_background_img.png');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .folder-page-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     flex-direction: row;
-    background: url('../../../public/folder_background_img.png');
-    background-size: 100%;
-    background-attachment: fixed;
-    width:100vw;
-    height:100vh;
-    position: sticky;
-    top: 0;
+    min-height: 100vh;
+    overflow: visible;
 }
 
 .left-nav-bar {
     margin: 4vh 3vw;
     border-right: 2px black solid;
     padding-right: 3vw;
-    position: sticky;
-    top: 0;
+    min-height: 100vh;
+    height: 400vh;
 }

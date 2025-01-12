@@ -12,6 +12,10 @@ function HomePage() {
         nav(`/${cabinetId}/${folderId}`);
     };
 
+    useEffect(() => {
+        document.title = "Karner's Website"; // Set the page title dynamically
+    }, []); // Run only on component mount
+
     // to fix react-spline bug where after routing to a separate page and coming back to spline,
     // the spline stops being interactive until cursor hovers out of spline then comes back
     useEffect(() => {

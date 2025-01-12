@@ -10,6 +10,7 @@
     transform: scale(1); 
     transition: transform 0.3s ease-in-out; 
     cursor: pointer;
+    font-family: KalamBold;
 }
 
 .folder-container.chosen {
@@ -27,4 +28,9 @@
     position: relative;
     z-index: 1;
     top: 40%;
+}
+
+@font-face {
+    font-family: KalamBold;
+    src: url('../../fonts/Kalam-Bold.ttf');
 }
