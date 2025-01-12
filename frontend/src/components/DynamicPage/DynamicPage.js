@@ -3,8 +3,6 @@ import { useParams } from 'react-router-dom';
 import BackToHomeButton from '../BackToHomeButton/BackToHomeButton';
 // import FolderLeftNav from '../FolderLeftNav/FolderLeftNav';
 import LeftNav from '../LeftNav/LeftNav';
-import TopCabInfoPage from '../TopCabinetInformation/TopCabInfoPage';
-import MidCabInfoPage from '../MidCabinetInformation/MidCabInfoPage';
 import "./DynamicPage.css";
 
 const importMap = {
