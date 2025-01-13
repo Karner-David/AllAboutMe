@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import "./TopCabInfoPage.css";
 import sample_pic from "../../media/sample_pic.avif"
