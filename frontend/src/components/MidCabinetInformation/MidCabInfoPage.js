@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import "./MidCabInfoPage.css";
 
-const API_BASE_URL = process.env.API_BASE_URL;
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const MidCabInfoPage = ({title, arrOfMedia, isPhoto}) => {
     const [media, setMedia] = useState([]);
 
     useEffect(() => {
         // get media data from backend
-        axios.get(`/api/media`)
+        axios.get(`${API_BASE_URL}/api/media`)
             .then((response) => {
                 console.log('API Response:', response.data);
                 setMedia(response.data.filter(item => item.type === (isPhoto ? 'photo' : 'video')));
