@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 app.use('/api/media', mediaRoutes);
 
-app.use('/upload', express.static(path.join(__dirname, 'upload')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
