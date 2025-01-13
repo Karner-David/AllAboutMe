@@ -11,6 +11,7 @@ const MidCabInfoPage = ({title, arrOfMedia, isPhoto}) => {
         // get media data from backend
         axios.get(`${API_BASE_URL}/media`)
             .then((response) => {
+                console.log('API Response:', response.data);
                 setMedia(response.data.filter(item => item.type === (isPhoto ? 'photo' : 'video')));
             })
             .catch((error) => console.error('Error fetching media:', error));
