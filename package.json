@@ -1,0 +1,15 @@
+{
+  "name": "allaboutme",
+  "version": "1.0.0",
+  "description": "My Portfolio Website [https://karners-website.netlify.app/](https://karners-website.netlify.app/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-all": "npm install --prefix backend && npm install --prefix frontend",
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
