@@ -19,17 +19,13 @@ mongoose.connect(process.env.MONGO_URI, {
 .then(() => console.log('Connected to MongoDB'))
 .catch((err) => console.log('Failed to connect to MongoDB', err));
 
-// API routes
 app.use('/api/media', mediaRoutes);
 
-// Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 
-// Catch-all route to serve the React app
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
 });
 
-// Start the server
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

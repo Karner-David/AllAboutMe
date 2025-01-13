@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import "./MidCabInfoPage.css";
 
+const API_BASE_URL = process.env.API_BASE_URL;
+
 const MidCabInfoPage = ({title, arrOfMedia, isPhoto}) => {
     const [media, setMedia] = useState([]);
 
     useEffect(() => {
         // get media data from backend
-        axios.get('http://localhost:3000/api/media')
+        axios.get(`${API_BASE_URL}/media`)
             .then((response) => {
                 setMedia(response.data.filter(item => item.type === (isPhoto ? 'photo' : 'video')));
             })
@@ -23,7 +25,7 @@ const MidCabInfoPage = ({title, arrOfMedia, isPhoto}) => {
                         {isPhoto ? (
                             <img 
                                 className={`photo ${item.isHorizontal ? 'hor' : 'ver'}`}
-                                src={`http://localhost:5000${item.url}`}
+                                src={item.url}
                                 alt={item.title} 
                             />
                         ) : (
