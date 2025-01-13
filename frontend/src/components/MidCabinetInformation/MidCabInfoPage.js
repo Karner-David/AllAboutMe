@@ -26,7 +26,7 @@ const MidCabInfoPage = ({title, arrOfMedia, isPhoto}) => {
                         {isPhoto ? (
                             <img 
                                 className={`photo ${item.isHorizontal ? 'hor' : 'ver'}`}
-                                src={item.url}
+                                src={`${API_BASE_URL}${item.url}`}
                                 alt={item.title} 
                             />
                         ) : (

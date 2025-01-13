@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const path = require('path');
 const mediaRoutes = require('./routes/mediaRoutes');
 
 dotenv.config();
@@ -19,6 +20,8 @@ mongoose.connect(process.env.MONGO_URI, {
 .catch((err) => console.log('Failed to connect to MongoDB', err));
 
 app.use('/api/media', mediaRoutes);
+
+app.use('/upload', express.static(path.join(__dirname, 'upload')));
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
