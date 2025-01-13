@@ -51,4 +51,5 @@ const MidCabInfoPage = ({title, arrOfMedia, isPhoto}) => {
     )
 }
 
+
 export default MidCabInfoPage;
