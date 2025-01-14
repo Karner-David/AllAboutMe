@@ -56,7 +56,7 @@ function HomePage() {
                     console.log('Clicked target:', e.target);
                     console.log('Target name:', e.target?.name);
 
-                    const topCabinetFolderNames = ['Interests', 'Clubs', 'Education', 'Me'];
+                    const topCabinetFolderNames = ['Interests', 'Clubs', 'Education', 'About Me'];
                     const midCabinetFolderNames = ['Photos', 'Videos'];
                     const botCabinetFolderNames = [];
 

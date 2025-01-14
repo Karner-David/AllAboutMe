@@ -12,7 +12,7 @@ const importMap = {
   };
 
 const folderNavMap = {
-    TopCabinetFolders: ["Me", "Education", "Clubs", "Interests"],
+    TopCabinetFolders: ["About Me", "Education", "Clubs", "Interests"],
     MidCabinetFolders: ["Photos", "Videos"],
     BotCabinetFolders: {}
 }
