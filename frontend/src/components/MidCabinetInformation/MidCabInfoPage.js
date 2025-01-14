@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import "./MidCabInfoPage.css";
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://allaboutmebackend.onrender.com/';
 
 const MidCabInfoPage = ({title, arrOfMedia, isPhoto}) => {
     const [media, setMedia] = useState([]);
