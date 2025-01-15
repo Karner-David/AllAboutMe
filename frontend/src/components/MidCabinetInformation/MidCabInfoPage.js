@@ -10,10 +10,10 @@ const MidCabInfoPage = ({title, arrOfMedia, isPhoto}) => {
     useEffect(() => {
         // get media data from backend
         console.log('WHAT IS THIS UNDEF', API_BASE_URL);
-        axios.get(`${API_BASE_URL}/api/media`)
+        axios.get(`${API_BASE_URL}/api/media/type/${isPhoto ? 'photo' : 'video'}`)
             .then((response) => {
                 console.log('API Response:', response.data);
-                setMedia(response.data.filter(item => item.type === (isPhoto ? 'photo' : 'video')));
+                setMedia(response.data);
             })
             .catch((error) => console.error('Error fetching media:', error));
     }, [isPhoto]);

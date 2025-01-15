@@ -33,6 +33,19 @@ router.get('/', async (req, res) => {
     }
 });
 
+// Get all media of a certain type
+router.get('/type/:type', async (req, res) => {
+    const { type } = req.params;
+
+    try {
+        const media = await Media.find({ type });
+        console.log(`Retrieved all media of type: ${type}`);
+        res.status(200).json(media);
+    } catch (err) {
+        res.status(500).json({ error: 'Failed to fetch media of the specified type'})
+    }
+})
+
 // Delete a media item
 router.delete('/:id', async (req, res) => {
     try {
