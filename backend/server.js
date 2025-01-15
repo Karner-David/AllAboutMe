@@ -24,7 +24,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // API routes
 app.use('/api/media', mediaRoutes);
-app.use('/api/info', infoRoutes);
+// app.use('/api/info', infoRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 4000;
