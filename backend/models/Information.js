@@ -20,4 +20,4 @@ const infoSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Media', infoSchema)
+module.exports = mongoose.model('Info', infoSchema)
