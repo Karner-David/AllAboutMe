@@ -21,10 +21,12 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Get all media items
+// Get all information items
 router.get('/', async (req, res) => {
     try {
         const info = await Information.find();
         console.log("retrieved all information");
+    } catch (err) {
+        res.status(500).json({err})
     }
-})
+});
