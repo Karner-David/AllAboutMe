@@ -37,3 +37,13 @@ const TopCabInfoPage = ({title, information1, information2, img1, img2}) => {
 }
 
 export default TopCabInfoPage;
+
+/*
+    {
+    "type" : "Education",
+    "title1": "University of Texas at Austin",
+    "p1": "I'm currently a <b>Junior</b> majoring in <b>Computer Science</b>. I am aiming to complete my <b>Bachelor's of Science</b> without interest in any additional post grad education. Some courses I have taken in the past include: <b>Data Structures</b>, Computer Architecture, <b>Operating Systems</b>, <b>Software Engineering</b>, and Data Management. Currently, I am taking <b>Algorithms and Complexity</b>, <b>Machine Learning 1</b>, and <b>Generative Visual Computing</b>.",
+    "title2": "Klein Collins Highschool",
+    "p2": "I am a Klein Collins graduate 🐯 of 2022. Some notable clubs I was in during my time were Latin Club, Spanish NHS, Mu Alpha Theta,and Asian Culture and Appreciation Club. Thank you to my teachers like Mr. and Mrs. Drugan for giving me such great experiences and for all the amazing friends I made throughout my 4 years."
+}
+*/

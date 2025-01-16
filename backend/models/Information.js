@@ -6,7 +6,15 @@ const infoSchema = new mongoose.Schema({
         enum: ['About Me', 'Education', 'Clubs', 'Interests'],
         required: true,
     },
+    title1: {
+        type: String,
+        required: true,
+    },
     p1: {
+        type: String,
+        required: true,
+    },
+    title2: {
         type: String,
         required: true,
     },
