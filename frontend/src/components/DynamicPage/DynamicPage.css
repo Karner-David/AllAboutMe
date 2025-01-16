@@ -19,5 +19,5 @@ html {
     border-right: 2px black solid;
     padding-right: 3vw;
     min-height: 100vh;
-    height: 400vh;
+    height: auto;
 }

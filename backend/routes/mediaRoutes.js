@@ -50,7 +50,7 @@ router.get('/type/:type', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     try {
         await Media.findByIdAndDelete(req.params.id);
-        console.log("deleted media");
+        console.log("deleted Media");
         res.status(200).json({ message: 'Media deleted successfully' });
     } catch (err) {
         res.status(500).json({ error: 'Failed to delete media'});

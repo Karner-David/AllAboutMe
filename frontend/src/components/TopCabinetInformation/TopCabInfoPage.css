@@ -12,6 +12,11 @@
     font-family: KalamRegular;
 }
 
+h2 {
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
+
 .left-side-container {
     width: 50%;
     border-right: 1px black solid;
@@ -19,12 +24,22 @@
     padding-right: 2vw;
 }
 
+.left-side-container h1 {
+    margin-bottom: 1vh;
+}
+
+.left-side-container h2 {
+    text-align: right;
+}
+
 .left-side-container .left-side-container-p-img {
     height: 90%;
 }
 
-.left-side-container p {
+p {
     height: auto;
+    margin-top: 0;
+    /* text-align: center; */
 }
 
 .left-side-container img {

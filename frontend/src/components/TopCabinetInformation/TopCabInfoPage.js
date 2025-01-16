@@ -10,13 +10,12 @@ const TopCabInfoPage = ({title, information1, information2, img1, img2}) => {
         <div className="info-page-container">
             <div className="left-side-container">
                 <h1>{title}</h1>
+                <h2>University of Texas at Austin</h2>
                 <div className="left-side-container-p-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                       dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                       anim id est laborum.
+                    <p>I'm currently a <b>Junior</b> majoring in <b>Computer Science</b>.
+                       I am aiming to complete my <b>Bachelor's of Science</b> without interest in any additional post grad education.
+                       Some courses I have taken in the past include: <b>Data Structures</b>, Computer Architecture, <b>Operating Systems</b>, <b>Software Engineering</b>, and Data Management.
+                       Currently, I am taking <b>Algorithms and Complexity</b>, <b>Machine Learning 1</b>, and <b>Generative Visual Computing</b>. 
                     </p>
                     <div className="left-side-container-img">
                         <img src={sample_pic} alt="sample pic" />
@@ -27,12 +26,10 @@ const TopCabInfoPage = ({title, information1, information2, img1, img2}) => {
                 <div className="right-side-container-img">
                     <img src={sample_pic} alt="sample pic" />
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.
+                <h2>Klein Collins Highschool</h2>
+                <p>I am a Klein Collins graduate 🐯 of 2022. Some notable clubs I was in during my time were Latin Club, Spanish NHS, Mu Alpha Theta,
+                   and Asian Culture and Appreciation Club. Thank you to my teachers like Mr. and Mrs. Drugan for giving me such great experiences and
+                   for all the amazing friends I made throughout my 4 years.
                 </p>
             </div>
         </div>
