@@ -9,6 +9,7 @@ html {
     color: black;
     font-family: KalamRegular;
     text-align: center;
+    overflow: scroll;
 }
 
 .mid-cabinet-container h1 {

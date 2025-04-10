@@ -10,7 +10,7 @@ html {
     display: grid;
     grid-template-columns: auto 1fr;
     flex-direction: row;
-    min-height: 100vh;
+    min-height: 50vh;
     overflow: visible;
 }
 
@@ -18,6 +18,6 @@ html {
     margin: 4vh 3vw;
     border-right: 2px black solid;
     padding-right: 3vw;
-    min-height: 100vh;
+    min-height: 50vh;
     height: auto;
 }
